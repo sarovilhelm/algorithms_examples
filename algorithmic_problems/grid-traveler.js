@@ -6,7 +6,7 @@
 
 
 //solution is
-//we recursively iterte over the matrix by decreasing the row and the column of the matrix
+//we recursively iterate over the matrix by decreasing the row and the column of the matrix
 //the way it works is
 
 //if we move one unit down, let's say our matrix is 3X3(3 rows and 3 columns)
@@ -34,8 +34,6 @@ const traveler = (x, y, memo = {}) => {
     memo[`${x}-${y}`] = ways;
     return ways;
 }
-
-console.log('---------------------------------------------------------------');
 
 
 console.log(traveler(2, 3)); // 3
